@@ -20,12 +20,10 @@ app.get('/', (req,res) => {
         lname:'Shah',
         likes:[
             'Biking',
-            'Cities'
+            'Criket'
         ]
     });
 });
-
-
 
 //Express Middleware
 // Middlware is works only those page that are set to be render
@@ -59,17 +57,12 @@ app.get('/about',(req,res) => {
     });
 });
 
-
-
-
 // Method - 1
 app.get('/bad',(req,res)=>{
     res.send({
         errormessage:'Unable to Handle request'
     });
 });
-
-
 
 app.listen(PORT);
 
