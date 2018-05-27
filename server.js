@@ -1,6 +1,10 @@
 const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
+
+// process.env.PORT is for heroku
+const PORT = process.env.PORT || 3000;
+
 var app = express();
 
 // Below code is to define route
@@ -67,6 +71,6 @@ app.get('/bad',(req,res)=>{
 
 
 
-app.listen(3000);
+app.listen(PORT);
 
 
