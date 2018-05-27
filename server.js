@@ -35,9 +35,9 @@ app.use((req,res,next) => {
     // next function is important...
     next();
 });
-app.use((req,res,next) => {
+/*app.use((req,res,next) => {
     res.render('maintain.hbs');
-});
+});*/
 
 
 // Method - 2 call using "localhost:3000/help.html"
